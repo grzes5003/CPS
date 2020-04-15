@@ -86,6 +86,22 @@ const std::vector<std::complex<T>> &FFT<T>::getXcppVec() const {
 }
 
 template<class T>
+void FFT<T>::dataSaver(const std::string &filename) {
+    std::ofstream outfile(filename);
+    // std::ostream_iterator<std::string> output_iterator(outfile, "\n");
+    if (outfile.good()) {
+        //throw "File already exists";
+    }
+    // std::copy(xcppVec.begin(), xcppVec.end(), output_iterator);
+
+    for (const std::complex<T> &e : xcppVec) {
+        outfile << e.real() << " " << e.imag() << "\n";
+    }
+
+    outfile.close();
+}
+
+template<class T>
 FFT<T>::FFT() = default;
 
 template

@@ -12,6 +12,7 @@
 #include <iostream>
 #include <algorithm>
 #include <iterator>
+#include <iomanip>
 
 template<class T>
 class FFT {
@@ -23,6 +24,7 @@ public:
     FFT();
 
     void dataLoader(const std::string &filename);
+    void dataSaver(const std::string &filename);
 
     void ditfft2(std::vector<std::complex<T>> &x);
 
