@@ -1,0 +1,16 @@
+[
+Node {
+    left:
+    Some(Node {
+    left:
+        Some(Node {
+        left:
+            Some(Node {
+            left:
+                Some(Node { left: None, right: None, value: Some(53), prob: Some(5) }),
+            right:
+                Some(Node {
+                    left: None, right: None, value: Some(49), prob: Some(2) }), value: None, prob: Some(7) }),
+                    right:
+                        Some(Node { left: None, right: None, value: Some(50), prob: Some(1) }), value: None, prob: Some(8) }),
+                            right: Some(Node { left: None, right: None, value: Some(52), prob: Some(1) }), value: None, prob: Some(9) }), right: Some(Node { left: None, right: None, value: Some(51), prob: Some(1) }), value: None, prob: Some(10) }]
