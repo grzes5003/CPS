@@ -13,7 +13,7 @@ pub struct Node {
     // value
     pub value: Option<u8>,
     // probability
-    pub prob: Option<u8>,
+    pub prob: Option<u16>,
 }
 
 impl Ord for Node {
@@ -35,7 +35,7 @@ impl PartialEq for Node {
 }
 
 
-pub fn generate_tree(code_hashmap: HashMap<u8, u8>) -> Box<Node> {
+pub fn generate_tree(code_hashmap: HashMap<u8, u16>) -> Box<Node> {
     let mut tree_vec: Vec<Box<Node>> =
         code_hashmap.iter().map(|(x, y)| Box::new(Node {
             value: Some(*x),

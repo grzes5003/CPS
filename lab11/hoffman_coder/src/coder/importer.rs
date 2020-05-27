@@ -27,7 +27,7 @@ pub fn vec2probability_map(chars_vec: Vec<u8>) -> Vec<(u8, f32)> {
     code_hashmap.iter().map(|(x,y)| (*x, (*y as f32)/chars_vec_len )).collect()
 }
 
-pub fn vec2hashmap(chars_vec: Vec<u8>) -> HashMap<u8,u8> {
+pub fn vec2hashmap(chars_vec: Vec<u8>) -> HashMap<u8,u16> {
     let mut code_hashmap = HashMap::new();
 
     for item in &chars_vec {
